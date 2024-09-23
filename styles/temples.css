@@ -52,7 +52,7 @@ header nav a {
     transition: background-color 0.5s;
 }
 
-header nav a:not(.active):hover {
+header nav a:hover {
     background-color: #555;
 }
 
