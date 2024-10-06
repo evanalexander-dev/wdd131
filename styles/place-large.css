@@ -1,0 +1,35 @@
+@media screen and (min-width: 1024px) {
+    #weather-title {
+        grid-template: 1fr / 1fr min-content;
+    }
+
+    #weather-svg {
+        display: none;
+    }
+
+    #weather-emoji {
+        display: inline;
+    }
+
+    #image {
+        position: relative;
+    }
+
+    #data, #weather {
+        position: absolute;
+        width: 20rem;
+        background-color: #fffc;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+
+    #data {
+        top: 15%;
+        left: 1%;
+    }
+
+    #weather {
+        top: 30vw;
+        right: 1%;
+    }
+}

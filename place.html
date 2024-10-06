@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Colorado | WDD 131</title>
+    <meta name="author" content="Evan Alexander">
+    <meta name="description" content="About Colorado page for WDD 131">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Colorado</h1>
+</header>
+<main>
+    <section id="image">
+        <picture>
+            <source srcset="images/colorado-hero-large.webp" media="(min-width: 1024px)">
+            <img src="images/colorado-hero-small.webp" alt="Colorado Rocky Mountains">
+        </picture>
+    </section>
+    <section id="data">
+        <h2>Data</h2>
+        <table>
+            <tr>
+                <td>Area:</td>
+                <td>104,100 sq mi</td>
+            </tr>
+            <tr>
+                <td>Population:</td>
+                <td>5,914,180</td>
+            </tr>
+            <tr>
+                <td>Capital:</td>
+                <td>Denver</td>
+            </tr>
+            <tr>
+                <td>Languages:</td>
+                <td>English, Spanish</td>
+            </tr>
+            <tr>
+                <td>Currency:</td>
+                <td>United States Dollar</td>
+            </tr>
+            <tr>
+                <td>Time Zone:</td>
+                <td>MDT</td>
+            </tr>
+            <tr>
+                <td>Calling Code:</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>Internet TLD:</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+    </section>
+    <section id="weather">
+        <div id="weather-title">
+            <h2>Weather</h2>
+            <p id="weather-svg"><img src="images/sunny.svg" alt="Sun"></p>
+            <p id="weather-emoji">☀️</p>
+        </div>
+        <table>
+            <tr>
+                <td>Temperature:</td>
+                <td>43 ºF</td>
+            </tr>
+            <tr>
+                <td>Conditions:</td>
+                <td>Sunny</td>
+            </tr>
+            <tr>
+                <td>Wind:</td>
+                <td>5 mph</td>
+            </tr>
+            <tr>
+                <td>Wind Chill:</td>
+                <td id="wind-chill"></td>
+            </tr>
+        </table>
+    </section>
+</main>
+<footer>
+    <p>©<span id="currentyear"></span> | Evan Alexander | Colorado</p>
+    <p id="lastModified" class="color"></p>
+</footer>
+</body>
+</html>
