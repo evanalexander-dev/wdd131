@@ -1,0 +1,22 @@
+@media screen and (min-width: 1400px) {
+    header {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    nav.closed {
+        display: flex; /* Ignore closed class if on a large screen (no hamburger menu) */
+    }
+
+    header nav {
+        flex-wrap: nowrap;
+    }
+
+    #cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #navtoggle {
+        display: none;
+    }
+}
