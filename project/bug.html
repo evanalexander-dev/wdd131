@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report | The Webcast Project</title>
+    <meta name="author" content="Evan Alexander">
+    <meta name="description" content="The Webcast Project Reporting Page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/webcast.css">
+    <link rel="stylesheet" href="styles/webcast-large.css">
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>The Webcast Project</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="install.html">Install</a>
+        <a href="bug.html" class="active">Bug Report</a>
+    </nav>
+</header>
+<main id="bug">
+    <h2>Did you find a bug in the project? Report it here!</h2>
+    <form action="reports.html" method="get">
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label>First Name<input type="text" name="fname" required></label>
+            <label>Last Name<input type="text" name="lname" required></label>
+            <label>Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Bug Info</legend>
+            <h4>Severity</h4>
+            <label><input type="radio" name="severity" value="low" required>Low</label>
+            <label><input type="radio" name="severity" value="medium" required>Medium</label>
+            <label><input type="radio" name="severity" value="high" required>High</label>
+            <label>Bug Title<input type="text" name="title" placeholder="Configuration page not loading"></label>
+            <label>Bug Description<textarea name="desc" id="desc"></textarea></label>
+        </fieldset>
+
+        <input type="submit" value="Report">
+    </form>
+</main>
+<footer>
+    <p>©<span id="currentyear"></span> | Evan Alexander | Colorado</p>
+</footer>
+</body>
+</html>

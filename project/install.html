@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install | The Webcast Project</title>
+    <meta name="author" content="Evan Alexander">
+    <meta name="description" content="The Webcast Project Install Instructions">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/webcast.css">
+    <link rel="stylesheet" href="styles/webcast-large.css">
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>The Webcast Project</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="install.html" class="active">Install</a>
+        <a href="bug.html">Bug Report</a>
+    </nav>
+</header>
+<main id="install">
+    <h2>The Webcast Project Quickstart</h2>
+    <ol>
+        <li>Download the <a href="#">prebuilt image for a Raspberry Pi 4</a>.</li>
+        <li>Write the image to an SD Card using the <a href="https://www.raspberrypi.org/software/">Raspberry Pi Imager</a></li>
+        <li>Install as shown below.</li>
+        <img src="images/diagram.webp" alt="Diagram showing the cable connections" loading="lazy">
+        <li>We strongly suggest setting a static IP through DHCP. The device's name will be webcast-pi.</li>
+        <li>Point a web browser to the IP address of the PI after it boots from the SD Card.</li>
+        <li>Login using webcast/alma3738</li>
+        <li>Go to the "Webcast Config" section of the Cockpit UI and enter the appropriate configuration details.</li>
+        <li>Click submit to save the configuration.</li>
+        <li>Click start to enable the service.</li>
+    </ol>
+    <h2>Recommended Parts List for a Chapel</h2>
+    <ul>
+        <li><a href="https://www.amazon.com/dp/B07TC2BK1X">Raspberry Pi 4 - 4GB</a></li>
+        <li><a href="https://www.amazon.com/dp/B07VD6LHS1">Raspberry Pi 4 Armor Case with Dual Fan</a></li>
+        <li><a href="https://www.amazon.com/dp/B07TYQRXTK">Raspberry Pi 4 Power Supply</a></li>
+        <li><a href="https://www.amazon.com/dp/B06XWN9Q99">MicroSD Card > 8GB (Speed Class 10)</a></li>
+        <li><a href="https://www.amazon.com/dp/B00IRVQ0F8">USB Sound Adapter</a></li>
+        <li><a href="https://www.amazon.com/dp/B088KLGVHJ">3.5mm Audio Cable</a></li>
+        <li><a href="https://www.amazon.com/dp/B08931JJLV">USB Webcam (1080p, narrow FOV & Tripod mount)</a></li>
+        <li><a href="https://www.amazon.com/dp/B0777FDCX7">USB Extension Cable</a></li>
+        <li>
+            Tall Camera Mount (Tripod OR Clamp Mount)
+            <ul>
+                <li><a href="https://www.amazon.com/dp/B08D6KM95D">Tall Tripod</a></li>
+                <li><a href="https://www.amazon.com/gp/product/B0772LBG2D">Clamp Mount</a> AND <a href="https://www.amazon.com/gp/product/B09688D5P900">Selfie Stick</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.amazon.com/gp/product/B01FZXLN5C">Gaffers Tape (if running cables across walkways)</a></li>
+        <p>
+            The last 2 items are optional.
+            We use the remote control outlet on the network switch to turn off/on the stream without having to reboot the Pi.
+            You could use the power switch on the Pi directly or use the web interface to stop and start the stream from a smartphone,
+            tablet or laptop. We chose the hanging remote control outlet with an indicator light so that it sat just above
+            the floor where the bishopric could see the light and control it from their seats.
+        </p>
+        <li><a href="https://www.amazon.com/dp/B07WX2NBWR">Remote Control Outlet</a></li>
+        <li><a href="https://www.amazon.com/dp/B0863M7C1L">Ethernet Switch</a></li>
+    </ul>
+</main>
+<footer>
+    <p>©<span id="currentyear"></span> | Evan Alexander | Colorado</p>
+</footer>
+</body>
+</html>

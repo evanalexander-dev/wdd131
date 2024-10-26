@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | The Webcast Project</title>
+    <meta name="author" content="Evan Alexander">
+    <meta name="description" content="The Webcast Project Home Page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/webcast.css">
+    <link rel="stylesheet" href="styles/webcast-large.css">
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>The Webcast Project</h1>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="install.html">Install</a>
+        <a href="bug.html">Bug Report</a>
+    </nav>
+</header>
+<main id="home">
+    <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+        <img src="images/hero-small.webp" alt="Mounted Raspberry Pi Setup" loading="lazy">
+    </picture>
+    <div>
+        <h2>Simple, Reliable Streaming</h2>
+        <p>
+            Welcome to The Webcast Project, a custom-built streaming solution designed to replace 
+            the Teradek system traditionally used by The Church of Jesus Christ of Latter-day Saints.
+            With a focus on simplicity, affordability, and flexibility, Webcast enables anyone to set up a reliable
+            livestream using a Raspberry Pi and our custom software - no complicated configuration required.
+        </p>
+        <h2>Why I Built Webcast</h2>
+        <p>
+            I was looking for a straightforward, easy-to-use system that could be used to stream Sunday services
+            during COVID. After spending some time and not finding anything that fit my needs, I decided to build it
+            myself!
+        </p>
+        <h2>Features at a Glance</h2>
+        <ul>
+            <li>
+                <b>Preconfigured Image:</b> Download and flash the Webcast image to your Raspberry Pi.
+                No complex software installation required.
+            </li>
+            <li>
+                <b>Customizable Streaming:</b> Choose to stream directly to the Church webcast system, or any
+                RTMP-compatible service, including YouTube, Facebook, or Twitch;
+            </li>
+            <li>
+                <b>Network Flexibility:</b> Works seamlessly on both wired and wireless connections,
+                making it ideal for both fixed and temporary locations.
+            </li>
+            <li>
+                <b>Low Bandwidth Friendly:</b> Optimize streaming for locations with limited upload speeds,
+                ensuring smooth deliver even at 500kbps.
+            </li>
+            <li>
+                <b>Full Control:</b> Start and stop streams directly from your browser or our custom app,
+                or control the device remotely with our power management setup.
+            </li>
+        </ul>
+    </div>
+</main>
+<footer>
+    <p>©<span id="currentyear"></span> | Evan Alexander | Colorado</p>
+</footer>
+</body>
+</html>
