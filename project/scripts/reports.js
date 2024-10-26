@@ -35,7 +35,7 @@ function addReport() {
 function delReport(id) {
   let tr = document.getElementById(id);
   table.removeChild(tr);
-  reports = reports.filter(x => x.id != id);
+  reports = reports.filter(x => x.id !== id);
   setStorage();
 }
 
