@@ -3,7 +3,7 @@ const searchParams = new URLSearchParams(window.location.search);
 
 let reports = JSON.parse(localStorage.getItem('reports')) || [];
 
-reports.map(addTableRow);
+reports.forEach(addTableRow);
 
 addReport();
 
@@ -14,16 +14,16 @@ function setStorage() {
 function addReport() {
   let report = {
     id: crypto.randomUUID(),
-    fname: searchParams.get('fname') || 'N/A',
-    lname: searchParams.get('lname') || 'N/A',
-    email: searchParams.get('email') || 'N/A',
-    severity: searchParams.get('severity') || 'Low',
-    title: searchParams.get('title') || 'N/A',
+    fname: searchParams.get('fname') || '',
+    lname: searchParams.get('lname') || '',
+    email: searchParams.get('email') || '',
+    severity: searchParams.get('severity') || '',
+    title: searchParams.get('title') || '',
     description: searchParams.get('desc') || '',
     date: new Date().toISOString().split('T')[0]
   };
 
-  if (reports.map(x => x.title).includes(report.title)) {
+  if (reports.map(x => x.title).includes(report.title) || report.title === '') {
     return;
   }
 
